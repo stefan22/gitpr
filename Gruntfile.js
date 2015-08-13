@@ -11,6 +11,12 @@ module.exports = function(grunt) {
         dest: 'dist/<%= pkg.name %>.js'
       }
     },
+    jasmine : {
+      src : 'src/**/*.js',
+      options : {
+          specs : 'spec/**/*.js'
+      }
+    },
     uglify: {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
@@ -46,9 +52,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-jasmine');
 
-  grunt.registerTask('test', ['jshint']);
+  grunt.registerTask('test', ['jshint','jasmine']);
 
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'test']);
 
 };
