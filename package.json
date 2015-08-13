@@ -1,0 +1,19 @@
+{
+  "name": "gitpr",
+  "version": "1.0.0",
+  "description": "GitHub Profile app purely in JavaScript that grabs data from the Github API in order to display a specified users avatar, number of followers and number of repos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefan22/gitpr.git"
+  },
+  "author": "sl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefan22/gitpr/issues"
+  },
+  "homepage": "https://github.com/stefan22/gitpr#readme"
+}
