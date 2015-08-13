@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/stefan22/gitpr/issues"
   },
-  "homepage": "https://github.com/stefan22/gitpr#readme"
+  "homepage": "https://github.com/stefan22/gitpr#readme",
+  "devDependencies": {
+    "bower": "^1.4.1"
+  }
 }
