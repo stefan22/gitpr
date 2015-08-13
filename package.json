@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/stefan22/gitpr#readme",
   "devDependencies": {
-    "bower": "^1.4.1"
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5"
   }
 }
