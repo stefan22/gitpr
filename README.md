@@ -19,4 +19,12 @@ it is important for every member of your team to run the command npm install fro
 * npm install --save-dev bower  .....to install node packages
 * bower install jquery --save   .....to install bower packages
 
+* bower install jquery --save
+* bower install bootstrap --save
+* bower install angular --save
+* bower install angular-resource --save 
+
 The --save will add the package into your bower.json file as a dependency. Then when you clone your repo again you can use bower install in exactly the same way as you bundle install with Ruby
+
+
+
