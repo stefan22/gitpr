@@ -4,6 +4,7 @@ githubUserSearch.controller('GitUserSearchController', [function() {
 
   self.searchResult = {
       "items": [
+      {
         "login": "tansaku",
         "avatar_url": "https://avatars.githubusercontent.com/u/30216?v=3",
         "html_url": "https://github.com/tansaku"
