@@ -14,9 +14,12 @@
   <body ng-controller="GitUserSearchController as searchCtrl">
     <div style="width:600px; margin:0 auto;padding:1em;">
       <form class="form-horizontal">
-        <input type="text" ng-model="searchCtrl.searchTerm">
+
+        <input type="text" ng-model="searchCtrl.searchTerm" ng-change="searchCtrl.doSearch()">
         <button class="btn" ng-click="searchCtrl.doSearch()">Search</button>
+
       </form><br/>
+      <div>Search term is: {{searchCtrl.searchTerm}}</div><br/>
       <ul class="list-group" ng-repeat="user in searchCtrl.searchResult.items">
         <li>
           <img ng-src="{{user.avatar_url}}&s=50">
