@@ -10,7 +10,8 @@ githubUserSearch.controller('GitUserSearchController', ['$resource', function($r
 
     self.searchResult = searchResource.get(
       {
-        q: self.searchTerm
+        q: self.searchTerm,
+        'access_token': gitProfileToken
       }
     );
 
